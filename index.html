@@ -6,6 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prashuk Jain - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+
+<style>
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: float 20s infinite ease-in-out;
+  }
+  .bubble1 {
+    width: 120px;
+    height: 120px;
+    background-color: #a855f7;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+  }
+  .bubble2 {
+    width: 80px;
+    height: 80px;
+    background-color: #9333ea;
+    top: 60%;
+    left: 80%;
+    animation-delay: 5s;
+  }
+  .bubble3 {
+    width: 100px;
+    height: 100px;
+    background-color: #c084fc;
+    top: 40%;
+    left: 30%;
+    animation-delay: 2s;
+  }
+  .bubble4 {
+    width: 140px;
+    height: 140px;
+    background-color: #7c3aed;
+    top: 75%;
+    left: 10%;
+    animation-delay: 7s;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-30px) scale(1.05);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+
 </head>
 <body class="bg-gradient-to-br from-purple-900 to-gray-900 text-white font-sans">
 
@@ -20,6 +73,10 @@
   </nav>
 
   <!-- Hero Section -->
+  <div class="bubble bubble1"></div>
+  <div class="bubble bubble2"></div>
+  <div class="bubble bubble3"></div>
+  <div class="bubble bubble4"></div>
   <section class="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 to-indigo-900 text-white px-6 md:px-16 py-20 overflow-hidden">
     <div class="absolute w-32 h-32 bg-cyan-300 opacity-20 rounded-full top-10 left-10 animate-ping"></div>
     <div class="absolute w-20 h-20 bg-purple-400 opacity-20 rounded-full bottom-20 right-12 animate-pulse"></div>

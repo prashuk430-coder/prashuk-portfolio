@@ -1,21 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prashuk Jain - Portfolio</title>
-  <link rel="icon" href="logo.png" type="image/png" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="final-portfolio-style.css" />
 </head>
 <body class="bg-gradient-to-br from-purple-900 to-gray-900 text-white font-sans">
 
-  <!-- Header -->
-  <nav class="flex justify-between items-center p-6 text-white text-lg font-semibold animate-fade-in-down">
-    <div class="flex items-center gap-2">
-      <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full" />
-      <span class="text-teal-300 text-xl font-bold">Prashuk Jain</span>
-    </div>
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center p-6 text-white text-lg font-semibold">
+    <span class="text-teal-300 text-xl font-bold">Prashuk Jain</span>
     <ul class="flex gap-6">
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -24,53 +20,58 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 to-indigo-900 text-white px-6 md:px-16 py-20">
-    <div class="mb-8 md:mb-0 md:mr-16 animate-scale-in-center">
-      <div class="rounded-full border-4 border-cyan-400 p-1 shadow-xl hover:scale-105 transition-transform duration-300">
+  <section class="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 to-indigo-900 text-white px-6 md:px-16 py-20 overflow-hidden">
+    <div class="absolute w-32 h-32 bg-cyan-300 opacity-20 rounded-full top-10 left-10 animate-ping"></div>
+    <div class="absolute w-20 h-20 bg-purple-400 opacity-20 rounded-full bottom-20 right-12 animate-pulse"></div>
+
+    <div class="mb-8 md:mb-0 md:mr-16 z-10">
+      <div class="rounded-full border-4 border-cyan-400 p-1 shadow-xl transition-transform duration-300 hover:scale-105 ring-4 ring-cyan-500 ring-offset-4 ring-offset-indigo-900">
         <img src="your-photo.jpg" alt="Prashuk Jain" class="rounded-full w-48 h-48 object-cover" />
       </div>
     </div>
-    <div class="text-center md:text-left max-w-xl animate-fade-in-up">
-      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-2">
-        Hi, I'm <span class="text-cyan-400 drop-shadow-md">Prashuk Jain</span>
+
+    <div class="text-center md:text-left max-w-xl z-10">
+      <h1 class="text-5xl sm:text-6xl font-bold leading-tight mb-3">
+        Hi, I'm <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">Prashuk Jain</span>
       </h1>
       <h2 class="text-2xl sm:text-3xl text-teal-300 mb-4 flex justify-center md:justify-start items-center gap-2">
-        Passionate Student Developer <span>🧑‍💻</span>
+        Passionate Student Developer 🧑‍💻
       </h2>
-      <p class="text-gray-300 mb-6 leading-relaxed">
-        Class 12 PCM + Computer Science student with a deep passion for technology, coding, and building innovative solutions. Currently preparing for JEE while exploring the exciting world of programming.
+      <p class="text-gray-300 mb-6 leading-relaxed text-base sm:text-lg">
+        Class 12 PCM + Computer Science student with a deep passion for technology, coding, and building innovative solutions.
+        Currently preparing for JEE while exploring the exciting world of programming.
       </p>
       <div class="flex justify-center md:justify-start gap-4">
-        <a href="#projects" class="bg-cyan-400 text-gray-900 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-cyan-300 transition">View My Projects</a>
-        <a href="#contact" class="border border-gray-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-900 transition">Get In Touch</a>
+        <a href="#projects" class="bg-cyan-400 text-gray-900 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-cyan-300 transition duration-300">View My Projects</a>
+        <a href="#contact" class="border border-gray-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-900 transition duration-300">Get In Touch</a>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <p class="text-center text-gray-300 mb-8">Building a strong foundation in programming and technology</p>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>🧑‍💻 Programming</h3>
-        <p>Python <span class="skill-percent">75%</span></p>
-        <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div>
-        <p>HTML <span class="skill-percent">65%</span></p>
-        <div class="skill-bar"><div class="fill" style="width: 65%;"></div></div>
+  <section id="skills" class="px-6 py-16 bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
+    <h2 class="text-4xl text-center font-bold text-cyan-400 mb-3 drop-shadow-md">Technical Skills</h2>
+    <p class="text-center text-gray-300 mb-10 text-lg">Building a strong foundation in programming and technology</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-cyan-400/30 hover:shadow-cyan-500/30 transition">
+        <h3 class="text-xl font-bold mb-4 text-cyan-300">🧑‍💻 Programming</h3>
+        <p class="mb-2">Python <span class="float-right text-cyan-300">75%</span></p>
+        <div class="w-full h-2 bg-gray-700 rounded mb-4"><div class="h-2 bg-cyan-400 rounded" style="width: 75%;"></div></div>
+        <p class="mb-2">HTML <span class="float-right text-cyan-300">65%</span></p>
+        <div class="w-full h-2 bg-gray-700 rounded"><div class="h-2 bg-cyan-400 rounded" style="width: 65%;"></div></div>
       </div>
-      <div class="skill-card">
-        <h3>🧰 Libraries & Tools</h3>
-        <ul>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-purple-400/30 hover:shadow-purple-500/30 transition">
+        <h3 class="text-xl font-bold mb-4 text-purple-300">🧰 Libraries & Tools</h3>
+        <ul class="list-disc pl-6 space-y-1 text-gray-300">
           <li>Tkinter (GUI)</li>
           <li>MySQL Database</li>
           <li>Matplotlib</li>
           <li>Turtle Graphics</li>
         </ul>
       </div>
-      <div class="skill-card">
-        <h3>✨ Creative Skills</h3>
-        <ul>
+      <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-pink-400/30 hover:shadow-pink-500/30 transition">
+        <h3 class="text-xl font-bold mb-4 text-pink-300">✨ Creative Skills</h3>
+        <ul class="list-disc pl-6 space-y-1 text-gray-300">
           <li>Canva Design</li>
           <li>CapCut Editing</li>
           <li>File Handling</li>
@@ -81,70 +82,41 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <p class="text-center text-gray-300 mb-8">Showcasing my journey in programming and development</p>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="tourism.jpg" alt="India Tourism Guide" />
-        <div class="badge">Python + MySQL</div>
-        <h3>India Tourism Guide</h3>
-        <p>Interactive GUI app featuring clickable India map & cultural info.</p>
-        <div class="tags"><span>Tkinter</span><span>MySQL</span></div>
-      </div>
-      <div class="project-card">
-        <img src="wifi.jpg" alt="Wi-Fi Password Finder" />
-        <div class="badge">Python Script</div>
-        <h3>Wi-Fi Password Finder</h3>
-        <p>Python script to retrieve saved Wi-Fi passwords — for learning purposes.</p>
-        <div class="tags"><span>Python</span><span>System</span></div>
-      </div>
-      <div class="project-card">
-        <img src="turtle.jpg" alt="Turtle Animation" />
-        <div class="badge">Creative Code</div>
-        <h3>Turtle Art & Animation</h3>
-        <p>Animated spiral patterns using turtle and colorsys modules.</p>
-        <div class="tags"><span>Turtle</span><span>Creative</span></div>
-      </div>
-      <div class="project-card">
-        <img src="csv.jpg" alt="CSV & Binary" />
-        <div class="badge">Data Handling</div>
-        <h3>CSV & Binary File Creator</h3>
-        <p>Python CSV and pickle modules used for data handling projects.</p>
-        <div class="tags"><span>CSV</span><span>Pickle</span></div>
-      </div>
-      <div class="project-card">
-        <img src="html.jpg" alt="Mini HTML Web Page" />
-        <div class="badge">Web Design</div>
-        <h3>Mini Web Page</h3>
-        <p>Responsive website using pure HTML showcasing personal profile.</p>
-        <div class="tags"><span>HTML</span><span>Responsive</span></div>
-      </div>
-      <div class="project-card">
-        <img src="capcut.jpg" alt="Video Editing Project" />
-        <div class="badge">Video Content</div>
-        <h3>Video with Voiceover</h3>
-        <p>Creative short video with voice narration and effects using CapCut.</p>
-        <div class="tags"><span>CapCut</span><span>Creative</span></div>
+  <section id="projects" class="px-6 py-16 bg-gradient-to-br from-purple-900 to-indigo-800 text-white">
+    <h2 class="text-4xl text-center font-bold text-cyan-400 mb-3 drop-shadow-md">Featured Projects</h2>
+    <p class="text-center text-gray-300 mb-10 text-lg">Showcasing my journey in programming and development</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/5 backdrop-blur-sm p-4 rounded-2xl shadow-md hover:shadow-cyan-500/20 transition border border-cyan-500/10">
+        <img src="tourism.jpg" alt="India Tourism Guide" class="rounded-xl mb-3 w-full h-40 object-cover" />
+        <span class="text-xs bg-cyan-500 px-2 py-1 rounded-full text-black font-semibold inline-block mb-2">Python + MySQL</span>
+        <h3 class="text-xl font-bold text-white">India Tourism Guide</h3>
+        <p class="text-sm text-gray-300 mt-2">Interactive GUI app featuring clickable India map & cultural info.</p>
+        <div class="text-xs mt-2 text-teal-300">Tkinter • MySQL • GUI</div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="text-center py-12 px-6">
-    <h2 class="text-3xl text-teal-400 font-bold mb-4">Get In Touch</h2>
-    <p class="text-gray-300 mb-8">Let's connect and explore opportunities together</p>
+  <section id="contact" class="py-16 px-6 bg-gradient-to-br from-indigo-800 to-purple-900 text-white text-center">
+    <h2 class="text-4xl font-bold text-cyan-400 mb-3 drop-shadow-md">Get In Touch</h2>
+    <p class="text-lg text-gray-300 mb-8">Let's connect and explore opportunities together</p>
     <div class="flex flex-col items-center gap-6 max-w-md mx-auto">
-      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>Email:</strong> prashukjain983@gmail.com</p></div>
-      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>YouTube:</strong> Python Coding With Me</p></div>
-      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>Phone:</strong> +91 84499 99816</p></div>
+      <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl w-full border border-cyan-300/30">
+        <p><strong>Email:</strong> prashukjain983@gmail.com</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl w-full border border-cyan-300/30">
+        <p><strong>YouTube:</strong> Python Coding With Me</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl w-full border border-cyan-300/30">
+        <p><strong>Phone:</strong> +91 84499 99816</p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 text-sm text-gray-400">
+  <footer class="text-center py-6 text-sm text-gray-400 bg-black bg-opacity-10 backdrop-blur-sm">
     <div class="mb-1">Currently Class 12 • JEE Aspirant • Future Engineer</div>
-    <div>© 2025 Prashuk Jain. Built with HTML, Tailwind CSS, and Creativity</div>
+    <div>© 2025 Prashuk Jain. Built with HTML, Tailwind CSS & Love 💙</div>
   </footer>
 
 </body>

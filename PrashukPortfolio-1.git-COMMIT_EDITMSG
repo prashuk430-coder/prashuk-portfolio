@@ -1,0 +1,7 @@
+Keep the introductory title constant on the home page for better clarity
+
+Removes TypingAnimation component and hardcodes the hero title in hero.tsx.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 67a144da-08a9-4067-bb09-39d0b1574540
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/53cc4523-2f66-4a5e-ae3d-fc0f43db02a5/67a144da-08a9-4067-bb09-39d0b1574540/kXxpyzk

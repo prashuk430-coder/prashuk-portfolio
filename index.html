@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashuk Jain - Portfolio</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="final-portfolio-style.css" />
+</head>
+<body class="bg-gradient-to-br from-purple-900 to-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <nav class="flex justify-between items-center p-6 text-white text-lg font-semibold animate-fade-in-down">
+    <div class="flex items-center gap-2">
+      <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full" />
+      <span class="text-teal-300 text-xl font-bold">Prashuk Jain</span>
+    </div>
+    <ul class="flex gap-6">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-purple-900 to-indigo-900 text-white px-6 md:px-16 py-20">
+    <div class="mb-8 md:mb-0 md:mr-16 animate-scale-in-center">
+      <div class="rounded-full border-4 border-cyan-400 p-1 shadow-xl hover:scale-105 transition-transform duration-300">
+        <img src="your-photo.jpg" alt="Prashuk Jain" class="rounded-full w-48 h-48 object-cover" />
+      </div>
+    </div>
+    <div class="text-center md:text-left max-w-xl animate-fade-in-up">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-2">
+        Hi, I'm <span class="text-cyan-400 drop-shadow-md">Prashuk Jain</span>
+      </h1>
+      <h2 class="text-2xl sm:text-3xl text-teal-300 mb-4 flex justify-center md:justify-start items-center gap-2">
+        Passionate Student Developer <span>🧑‍💻</span>
+      </h2>
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Class 12 PCM + Computer Science student with a deep passion for technology, coding, and building innovative solutions. Currently preparing for JEE while exploring the exciting world of programming.
+      </p>
+      <div class="flex justify-center md:justify-start gap-4">
+        <a href="#projects" class="bg-cyan-400 text-gray-900 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-cyan-300 transition">View My Projects</a>
+        <a href="#contact" class="border border-gray-300 text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-900 transition">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <p class="text-center text-gray-300 mb-8">Building a strong foundation in programming and technology</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>🧑‍💻 Programming</h3>
+        <p>Python <span class="skill-percent">75%</span></p>
+        <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div>
+        <p>HTML <span class="skill-percent">65%</span></p>
+        <div class="skill-bar"><div class="fill" style="width: 65%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <h3>🧰 Libraries & Tools</h3>
+        <ul>
+          <li>Tkinter (GUI)</li>
+          <li>MySQL Database</li>
+          <li>Matplotlib</li>
+          <li>Turtle Graphics</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>✨ Creative Skills</h3>
+        <ul>
+          <li>Canva Design</li>
+          <li>CapCut Editing</li>
+          <li>File Handling</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <p class="text-center text-gray-300 mb-8">Showcasing my journey in programming and development</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="tourism.jpg" alt="India Tourism Guide" />
+        <div class="badge">Python + MySQL</div>
+        <h3>India Tourism Guide</h3>
+        <p>Interactive GUI app featuring clickable India map & cultural info.</p>
+        <div class="tags"><span>Tkinter</span><span>MySQL</span></div>
+      </div>
+      <div class="project-card">
+        <img src="wifi.jpg" alt="Wi-Fi Password Finder" />
+        <div class="badge">Python Script</div>
+        <h3>Wi-Fi Password Finder</h3>
+        <p>Python script to retrieve saved Wi-Fi passwords — for learning purposes.</p>
+        <div class="tags"><span>Python</span><span>System</span></div>
+      </div>
+      <div class="project-card">
+        <img src="turtle.jpg" alt="Turtle Animation" />
+        <div class="badge">Creative Code</div>
+        <h3>Turtle Art & Animation</h3>
+        <p>Animated spiral patterns using turtle and colorsys modules.</p>
+        <div class="tags"><span>Turtle</span><span>Creative</span></div>
+      </div>
+      <div class="project-card">
+        <img src="csv.jpg" alt="CSV & Binary" />
+        <div class="badge">Data Handling</div>
+        <h3>CSV & Binary File Creator</h3>
+        <p>Python CSV and pickle modules used for data handling projects.</p>
+        <div class="tags"><span>CSV</span><span>Pickle</span></div>
+      </div>
+      <div class="project-card">
+        <img src="html.jpg" alt="Mini HTML Web Page" />
+        <div class="badge">Web Design</div>
+        <h3>Mini Web Page</h3>
+        <p>Responsive website using pure HTML showcasing personal profile.</p>
+        <div class="tags"><span>HTML</span><span>Responsive</span></div>
+      </div>
+      <div class="project-card">
+        <img src="capcut.jpg" alt="Video Editing Project" />
+        <div class="badge">Video Content</div>
+        <h3>Video with Voiceover</h3>
+        <p>Creative short video with voice narration and effects using CapCut.</p>
+        <div class="tags"><span>CapCut</span><span>Creative</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-12 px-6">
+    <h2 class="text-3xl text-teal-400 font-bold mb-4">Get In Touch</h2>
+    <p class="text-gray-300 mb-8">Let's connect and explore opportunities together</p>
+    <div class="flex flex-col items-center gap-6 max-w-md mx-auto">
+      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>Email:</strong> prashukjain983@gmail.com</p></div>
+      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>YouTube:</strong> Python Coding With Me</p></div>
+      <div class="bg-purple-800 p-4 rounded-xl w-full"><p><strong>Phone:</strong> +91 84499 99816</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-400">
+    <div class="mb-1">Currently Class 12 • JEE Aspirant • Future Engineer</div>
+    <div>© 2025 Prashuk Jain. Built with HTML, Tailwind CSS, and Creativity</div>
+  </footer>
+
+</body>
+</html>
